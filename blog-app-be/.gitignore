@@ -1,0 +1,9 @@
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask session files (if stored on the filesystem)
+flask_session/

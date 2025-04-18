@@ -1,0 +1,13 @@
+{
+    "name": "blog-app-monorepo",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "start": "concurrently \"cd blog-app-fe && npm run dev\" \"cd blog-app-be && python3 app.py\"",
+      "install:fe": "cd blog-app-fe && npm install",
+      "install:be": "cd blog-app-be && pip install -r requirements.txt" 
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.2" 
+    }
+  }
